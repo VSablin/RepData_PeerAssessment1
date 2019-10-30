@@ -415,7 +415,7 @@ data_new$steps[is.na(data_new$steps)] &lt;- avg_steps_int$avg</code></pre>
 <p>I redo the histogram of the total number of steps each day, the mean, and the median by previously filling the missing data:</p>
 <pre class="r"><code>data_new_day &lt;- group_by(data_new,date)
 #Notice that I ignore the NA&#39;s
-steps_new_day &lt;- summarize(data_new_day, steps = sum(steps,na.rm=TRUE))
+steps_new_day &lt;- summarize(data_new_day, steps = sum(steps))
 
 
 hist(steps_new_day$steps,main=&quot;Histogram of the total number of steps each day&quot;,xlab = &quot;steps&quot;)</code></pre>

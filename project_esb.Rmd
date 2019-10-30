@@ -90,7 +90,7 @@ I redo the histogram of the total number of steps each day, the mean, and the me
 
 data_new_day <- group_by(data_new,date)
 #Notice that I ignore the NA's
-steps_new_day <- summarize(data_new_day, steps = sum(steps,na.rm=TRUE))
+steps_new_day <- summarize(data_new_day, steps = sum(steps))
 
 
 hist(steps_new_day$steps,main="Histogram of the total number of steps each day",xlab = "steps")
