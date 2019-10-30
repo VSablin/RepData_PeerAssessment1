@@ -1,5 +1,8 @@
 ---
 title: "Reproducible research: Project 1"
+output:
+  html_document:
+    keep_md: yes
 ---
 
 I unzip and read the data:
